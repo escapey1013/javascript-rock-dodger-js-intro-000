@@ -20,7 +20,7 @@ var gameInterval = null
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
-  createRock(x)
+  createRock()
 
   const rockVertical = positionToInteger(rock.style.top)
 
