@@ -20,7 +20,7 @@ var gameInterval = null
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
-  let rock = document.createElement('div')
+  // let rock = document.createElement('div')
   const rockVertical = positionToInteger(rock.style.top)
 
   // rocks are 20px high
