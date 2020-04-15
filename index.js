@@ -37,7 +37,7 @@ function checkCollision(rock) {
     if (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) ||
         (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) ||
         (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge) {
-
+      
       return true;
     } else {
       return false;
@@ -74,6 +74,10 @@ function createRock(x) {
      */
      if (checkCollision(rock)) {
        endGame();
+     } else if (top < GAME_HEIGHT) {
+       stepRock()
+     } else {
+       rock.remove()
      }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
