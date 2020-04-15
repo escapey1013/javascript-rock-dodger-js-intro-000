@@ -20,12 +20,12 @@ var gameInterval = null
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
-  const height = positionToInteger(rock.style.top)
+  const rockVertical = positionToInteger(rock.style.top)
 
   // rocks are 20px high
   // DODGER is 20px high
   // GAME_HEIGHT - 20 - 20 = 360px;
-  if (height > 360) {
+  if (rockVertical > 360) {
     var dodgerLeftPosition = dodger.style.left.replace('px','');
     var dodgerLeftInteger = parseInt(dodgerLeftPosition, 10);
 
